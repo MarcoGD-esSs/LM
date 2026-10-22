@@ -26,8 +26,22 @@
             <input type="checkbox" name="ciclo" value="ciclodam">DAM
             <input type="checkbox" name="ciclo" value="ciclodaw">DAW
         </Fieldset>
-        <br>
-        <input type="submit" value="Enviar">
+        <fieldset>
+         <legend>Rellene las opciones siguientes</legend>
+         <label for="fecha">Elija una fecha:</label>  
+         <imput type="date" name="fecha" id="fecha">
+         <textarea name="fecha" id="fecha" cols="10" rows="1" placeholder="dd/mm/aaaa"></textarea>
+         <br>
+         <label for="fichero">Elija un fichero:</label>
+         <input type="file" name="fichero" id="fichero">
+         <br>
+         <select size="4">
+            <option value="smir">SMIR</option>
+            <option value="asir">ASIR</option>
+            <option value="dam">DAM</option>
+            <option value="daw">DAW</option>
+         </select>
+        </fieldset>
     </form>
 </body>
 </html>
