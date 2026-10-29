@@ -6,7 +6,7 @@
     <title>Blog Técnico</title>
 </head>
 <header>
-    <h1>TechOps & SysAdmin Blog</h1>
+    <h1 id="id_Inicio">TechOps & SysAdmin Blog</h1>
     <p>Bienvenido a nuestro blog sobre operaciones tecnológicas y administración de sistemas.</p>
     <nav>
         <ul>
@@ -17,21 +17,59 @@
     </nav>
 </header>
 <main>
+<article>
     <section id="id_parche_sistemaWindows">
         <h2>Microsoft lanza un parche urgente para aplicaciones y servidores: que corrige el fallo de brotli </h2>
+        <a href="https://www.20minutos.es/tecnologia/ciberseguridad/microsoft-lanza-parche-urgente-aplicaciones-servidores-corrige-fallo-brotli_7053808_0.html"> <img src="img/fotonoticia1.png" alt="Parche para Sistema Windows" height="250px"></a>
         <p>Microsoft ha publicado una actualización de seguridad fuera de banda (OBB, por sus siglas) para .NET 8, .NET 9 y .NET 10, así como para la tercera versión candidata de .NET 11. Acorde a la información compartida por la compañía, el parche está distribuido fuera del calendario habitual de actualizaciones y corrige varias vulnerabilidades que pueden comprometer la seguridad de las aplicaciones y los sistemas que utilizan estas tecnologías, por ello, Microsoft recomienda instalar las nuevas versiones lo antes posible.
-Uno de los fallos corregidos afecta al algoritmo de descompresión Brotli, utilizado para procesar determinados datos comprimidos. Identificada como CVE-2026-111497, esta vulnerabilidad puede permitir que un atacante sin autenticar lea o modifique la memoria de un proceso, teniendo en cuenta que entre sus posibles consecuencias figuran la exposición de información, la interrupción del funcionamiento de un servicio y la obtención de privilegios elevados.
-Además, la vulnerabilidad puede afectar a las aplicaciones que procesan datos comprimidos con Brotli mediante funciones de ASP.NET Core, la descompresión automática de respuestas de HttpClient o las interfaces de la biblioteca System.IO.Compression. Sin embargo, Microsoft aclara que la descompresión de solicitudes y la de respuestas no están activadas de forma predeterminada, ya que la vulnerabilidad no afecta a .NET Framework.</p>
+ Uno de los fallos corregidos afecta al algoritmo de descompresión Brotli, utilizado para procesar determinados datos comprimidos. Identificada como CVE-2026-111497, esta vulnerabilidad puede permitir que un atacante sin autenticar lea o modifique la memoria de un proceso, teniendo en cuenta que entre sus posibles consecuencias figuran la exposición de información, la interrupción del funcionamiento de un servicio y la obtención de privilegios elevados.
+ Además, la vulnerabilidad puede afectar a las aplicaciones que procesan datos comprimidos con Brotli mediante funciones de ASP.NET Core, la descompresión automática de respuestas de HttpClient o las interfaces de la biblioteca System.IO.Compression. Sin embargo, Microsoft aclara que la descompresión de solicitudes y la de respuestas no están activadas de forma predeterminada, ya que la vulnerabilidad no afecta a .NET Framework.</p>
+        <meta>Autora: Ana Higuera Fecha Publicación: 27/10/2026 </meta>
     </section>
-    <section id="id_migracion_nube">
+    <section id="id_migracion_nube" >
         <h2>¿Qué es la migración a la nube?</h2>
+        <a href="https://www.ibm.com/es-es/think/topics/cloud-migration"><img src="img/fotonoticia2.png" alt="Migración a la Nube" height="250px"></a>s
         <p>La migración a la nube es el proceso de mover datos, aplicaciones y cargas de trabajo de un centro de datos local a una infraestructura basada en la nube o de un entorno de nube a otro (conocida como migración de nube a nube).
-Una empresa puede migrar a una sola nube o a varias. Pueden utilizar modelos de nube pública, en los que los servicios se prestan a través de la Internet pública, o modelos de nube privada , con una infraestructura de nube segura y propia a la que sólo pueden acceder ellos. Muchas organizaciones optan por un entorno de nube híbrida, que combina servicios de nube pública y privada para crear una infraestructura de TI única, flexible y rentable que admite y automatiza la gestión de las cargas de trabajo en todos los entornos de nube.
-Las nubes múltiples ofrecen otra opción, lo que permite a las empresas migrar la infraestructura de TI utilizando múltiples proveedores de nube pública. Las nubes múltiples pueden ser tan sencillas como utilizar el software como servicio (SaaS) de diferentes proveedores para emplear funciones de portabilidad en todas las infraestructuras. Sin embargo, a menudo implican la gestión de aplicaciones en plataforma como servicio (PaaS) o infraestructura como servicio (IaaS) a través de múltiples proveedores de la nube —como Amazon Web Services, Google Cloud Platform, IBM Cloud y Microsoft Azure— desde una consola central.</p>
+ Una empresa puede migrar a una sola nube o a varias. Pueden utilizar modelos de nube pública, en los que los servicios se prestan a través de la Internet pública, o modelos de nube privada , con una infraestructura de nube segura y propia a la que sólo pueden acceder ellos. Muchas organizaciones optan por un entorno de nube híbrida, que combina servicios de nube pública y privada para crear una infraestructura de TI única, flexible y rentable que admite y automatiza la gestión de las cargas de trabajo en todos los entornos de nube.
+ Las nubes múltiples ofrecen otra opción, lo que permite a las empresas migrar la infraestructura de TI utilizando múltiples proveedores de nube pública. Las nubes múltiples pueden ser tan sencillas como utilizar el software como servicio (SaaS) de diferentes proveedores para emplear funciones de portabilidad en todas las infraestructuras. Sin embargo, a menudo implican la gestión de aplicaciones en plataforma como servicio (PaaS) o infraestructura como servicio (IaaS) a través de múltiples proveedores de la nube —como Amazon Web Services, Google Cloud Platform, IBM Cloud y Microsoft Azure— desde una consola central.</p>
+        <meta>Autor: IBM</meta>
     </section>
     <section id="id_Operaciones_autonomas">
-        <h2></h2>
+        <h2>9 Mejores prácticas de copias de seguridad</h2>
+        <a href="https://objectfirst.com/es/guides/data-backup/9-data-backup-best-practices/"> <img src="img/fotonoticia3.png" alt="Copias de Seguridad" height="250px"></a>
+        <p>Las copias de seguridad son una de las estrategias de protección de datos más conocidas, y son implementadas por la mayoría de las empresas.
+ Sin embargo, las copias de seguridad son frecuentemente malinterpretadas: más que una tarea técnica o un "extra", son esenciales para el cumplimiento, la resiliencia y la recuperación. Hacerlas correctamente es la diferencia entre la recuperación empresarial y la pérdida catastrófica de datos.
+ En esta guía, exploraremos todas las mejores prácticas esenciales de copias de seguridad, algunos de los errores a evitar, así como los beneficios empresariales de seguir la estrategia correcta.</p>
+        <meta>Autores: Andrew Simmonds y Maxim Arkangelskiy</meta>
     </section>
+</article>
+<form>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe tu comentario aquí:"></textarea>
+    <br>
+    <input type="checkbox" id="politica" name="politica" value="aceptar">
+    <label for="politica">Acepto la política de privacidad</label>
+    <br>
+    <input type="submit" value="Enviar">
+    
+</form>
 </main>
-
+<aside>
+    <h2>Enlaces de Interés</h2>
+    <ul>
+        <li><a href="https://www.debian.org/doc/index.es.html">Documentación de Debian</a></li>
+        <li><a href="https://docs.redhat.com/es/products">Documentación de Red Hat</a></li>
+        <li><a href="https://learn.microsoft.com/es-es/windows/">Documentación de Windows</a></li>
+    </ul>
+</aside>
+    <hr>
+<footer>
+    <a href="#id_Inicio">Volver Arriba</a>
+    <p>© 2026 TechOps & SysAdmin Blog. Todos los derechos reservados.</p>
+</footer>
 </html>
