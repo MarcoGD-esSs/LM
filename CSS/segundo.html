@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo CSS</title>
+    <style>
+        ul > li {
+            color: red;
+            font-size: 20px;
+        }
+        h2 + p {
+            color: green;
+        }
+        input[type="text"] {
+            border: 3px solid red;
+        }
+        .parrafoverde {
+            color: green;
+        }
+        .parrafoverde:hover {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .parraforojo {
+            color: red;
+        }
+        .parraforojo:hover {
+            font-weight: bold;
+            font-size: 30px;
+            background-image: url(images.jpg);
+            background-size: 10%;
+        }
+        p.parraforojo::first-letter{
+            font-size: 2.5em;
+            font-weight: bold;
+            color: blue;
+        }
+        .parrafomorado {
+            color: purple;
+            background-image: url(fnaf-purple-guy-peepaw.gif);
+            background-size: 10%;
+        }
+        p.parrafomorado::first-letter{
+            font-size: 2.5em;
+            font-weight: bold;
+            color: Yellow;
+        }
+        .parrafomorado:hover {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        input:focus {
+            border: 5px red dashed;
+        }
+        tr:nth-child(odd) {
+            background-color: yellow;
+        }
+        .bloque {
+            width: 40%;
+            height: 10%;
+            border: 4px solid red;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>Primera opcion0</li>
+        <ol>
+            <li> Primera subopcion de la primera opcion</li>
+            <li> Segunda subopcion de la primera opcion</li>
+        </ol>
+        <li>Segunda opcion</li>
+    </ul>
+
+    <p>Mi primer parrafo</p>
+
+    <h2>Esto es un encabezado de segundo nivel</h2>
+    <p>Mi segundo parrafo</p>
+    <p>Mi tercer parrafo</p>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" placeholder="Aqui escribe el nombre" id="nombre">
+        <label for="edad">Edad:</label>
+        <input type="number" step="5" id="edad">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p class="parrafoverde">Este es un parrafo verde</p>
+    <p class="parraforojo">Este es un parrafo rojo</p>
+    <p class="parrafomorado">Este es un parrafo morado</p>
+
+    <table>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+        </tr>
+        <tr>
+            <td>Fila 1, Celda 1</td>
+            <td>Fila 1, Celda 2</td>
+        </tr>
+        <tr>
+            <td>Fila 2, Celda 1</td>
+            <td>Fila 2, Celda 2</td>
+        </tr>
+    </table>
+
+    <div class="bloque">Cualquier cosa</div>
+
+    <img src="fnaf-purple-guy-peepaw.gif" style="margin: 0px auto; display: block;">
+
+</body>
+</html>
