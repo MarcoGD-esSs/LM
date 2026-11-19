@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro Practico</title>
+    <style>
+        body {
+            background-image: url(img/papel.avif);
+        }
+        p {
+            font-size: 16px;
+        }
+        div {
+            border: blue solid 2px;
+        }
+        .tituloazul {
+            color: blue;
+        }
+        .tituloverde {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Crea la imagen usando 3 tablas</h2>
+    <table border="2">
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>A1</td>
+                        <td>A2</td>
+                        <td>A3</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>B1</td>
+                    </tr>
+                    <tr>
+                        <td>B2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Escribe un documento HTML que incluya los siguientes puntos:</h2>
+
+    <h1 class="tituloazul">Este es mi examen</h1>
+    <p>Esta es <a href="http://www.vedoque.com/">una buena pagina</a></p>
+    <img src="img/paisaje.jpg" height="100px" alt="Esta es una gran imagen">
+   
+    <h2>El examen esta siendo facil</h2>
+    <p>No esperaba que fuera tan facil</p>
+    <table border="2">
+        <tr>
+            <td>Nombre</td>
+            <td>Jose</td>
+            <td>Paco</td>
+            <td>Jesus</td>
+
+        </tr>
+        <tr>
+            <td>Nota</td>
+            <td>7</td>
+            <td>3</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+</body>
+<footer>
+    <p>Hoy si que voy a aprobar</p>
+    <div>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="ciclo">Ciclo:</label>
+        <select name="ciclo" id="ciclo">
+            <option value="ASIR">ASIR</option>
+            <option value="DAM">DAM</option>
+            <option value="DAW">DAW</option>
+        </select>
+        <br>
+        <label>Curso:</label>
+        <input type="radio" id="primero" name="curso" value="Primero">
+        <input type="radio" id="segundo" name="curso" value="Segundo">
+        <br>
+        <input type="checkbox" id="estudios" name="estudios">
+        <label for="estudios">He estudiado Bachillerato y/o SMR</label>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+</footer>
+</html>
